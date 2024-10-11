@@ -4,51 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./assets/css/styling.css" />
     <link
       rel="icon"
       type="image/x-icon"
-      href="./assets/img/Dumbo_Octopus_Pixel_Art.ico?"
+      href="./assets/img/Dumbo_Octopus_Pixel_Art.ico"
     />
   </head>
   <body>
     <header>
+      <div class="banner">
+        <img
+          class="logo"
+          src="./assets/img/Dumbo_Octopus_Pixel_Art.ico"
+          alt=""
+        />
+
+        <!--navbar-starts-->
+        <nav class="main-nav-bar">
+          <span
+            ><a href="#"><u>Home</u></a></span
+          >
+          <span><a href="./html/my_resume.html">Resume</a></span>
+          <span><a href="./html/my_fun_facts.html">FunFacts</a></span>
+        </nav>
+        <!--navbar-ends-->
+
+        <a href="http://lego.com">Hire Me</a>
+      </div>
+    </header>
+
+    <main>
       <div class="main-heading">
         <h1>Evan Bogedin's Portfolio Website</h1>
       </div>
 
-      <!--navbar-starts-->
-      <div class="nav-bar">
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="./html/my_resume.html">Resume</a></li>
-            <li><a href="./html/my_fun_facts.html">FunFacts</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!--navbar-ends-->
-    </header>
-    <hr />
-    <main>
       <!--profile-starts-->
       <section class="profile-section">
-        <div class="profile-img">
-          <!--I dont have a picture of me on this computer 🙃-->
-          <img
-            src="assets/img/Place_Holder.png"
-            alt="weird sparkly green lines and stuff"
-            width="128"
-            height="128"
-          />
-        </div>
+        <div class="profile-container">
+          <div class="profile-img">
+            <img
+              src="assets/img/Place_Holder.png"
+              alt="weird sparkly green lines and stuff"
+              width="128"
+              height="128"
+            />
+          </div>
 
-        <div class="profile-quote">
-          <blockquote>
-            "Yesterday is history, tomorrow is a mystery, but today is a gift.
-            That is why it is called the present." - Master Oogway
-          </blockquote>
+          <div class="profile-quote">
+            <p>
+              "Yesterday is history, tomorrow is a mystery, but today is a gift.
+              That is why it is called the present." - <b>Master Oogway</b>
+            </p>
+          </div>
         </div>
-
         <div class="intro-text">
           <p>
             Hello, my name is Evan Bogedin and I am Seinor at Oakland University
@@ -60,14 +69,17 @@
             my programming skills, gaining real world experience in software
             development and expand my knowledge in computer science by working
             at a company. to know more about me check out my
-            <a href="./html/my_resume.html">resume</a> and
-            <a href="./html/my_fun_facts.html">FunFacts</a>.
+            <a href="./html/my_resume.html"><b>Resume</b></a> and
+            <a href="./html/my_fun_facts.html"><b>FunFacts</b></a
+            >.
           </p>
         </div>
 
         <div class="progress-bar">
-          <h2>Degree progress</h2>
-          <progress value="122" max="128">95%</progress>
+          <div>
+            <h2>Degree progress</h2>
+            <progress value="122" max="128">95%</progress>
+          </div>
         </div>
       </section>
       <!--profile-ends-->
@@ -77,13 +89,26 @@
     <br />
 
     <footer>
-      <p>©2024 Evan Bogedin</p>
+      <div class="right">
+        <p>©2024 Evan Bogedin</p>
 
-      <h3>Contact me</h3>
+        <h3>Contact me</h3>
 
-      <p>(999) 999-9999</p>
+        <p>(999) 999-9999</p>
 
-      <p>ebogedin@oakland.edu</p>
+        <p>ebogedin@oakland.edu</p>
+      </div>
+
+      <div class="left">
+        <h3>Links</h3>
+
+        <a class="footer-links" href="http://lego.com"> Hire Me</a>
+
+        <a class="footer-links" href="#">Home</a>
+
+        <a class="footer-links" href="./html/my_resume.html">Resume</a>
+        <a class="footer-links" href="./html/my_fun_facts.html">FunFacts</a>
+      </div>
     </footer>
   </body>
 </html>

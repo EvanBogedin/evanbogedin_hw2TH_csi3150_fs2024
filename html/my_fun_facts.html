@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FunFacts</title>
+    <link rel="stylesheet" href="../assets/css/styling.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -12,57 +13,67 @@
   </head>
   <body>
     <header>
-      <div class="main-heading">
-        <h1>Evan Bogedin's Portfolio Website</h1>
-      </div>
+      <div class="banner">
+        <img
+          class="logo"
+          src="../assets/img/Dumbo_Octopus_Pixel_Art.ico"
+          alt=""
+        />
 
-      <!--navbar-starts-->
-      <div class="nav-bar">
-        <nav>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./my_resume.html">Resume</a></li>
-            <li><a href="#">FunFacts</a></li>
-          </ul>
+        <!--navbar-starts-->
+        <nav class="main-nav-bar">
+          <span><a href="../index.html">Home</a></span>
+          <span><a href="./my_resume.html">Resume</a></span>
+          <span
+            ><a href="#"><u>FunFacts</u></a></span
+          >
         </nav>
+        <!--navbar-ends-->
+
+        <a href="http://lego.com">Hire Me</a>
       </div>
-      <!--navbar-ends-->
     </header>
 
-    <main>
+    <main class="fun-facts-main">
       <hr />
-      <h2>Some fun facts about me</h2>
+      <h2>Some Fun Facts About Me</h2>
       <hr />
       <section class="favourite-book">
-        <h4>Current Favourite Book</h4>
-        <h5>The Lord of the Rings</h5>
+        <h4 class="fun-fact-h4">Current Favourite Book</h4>
 
-        <img
-          src="../assets/img/lotr.jpg"
-          alt="cover of lord of the rings"
-          width="122"
-          height="187.5"
-        />
-        <p>
-          You can purchase it
-          <a
-            href="https://www.amazon.com/Lord-Rings-Illustrated-J-R-R-Tolkien-ebook/dp/B09JF7NBT4/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr="
-            >Here</a
-          >.
-        </p>
+        <div class="favourite-book-container">
+          <div class="left">
+            <h5>The Lord of the Rings</h5>
 
-        <p>
-          I dont believe I have ever found a story to be quite as imersive and
-          full of great characters as the Lord of the Rings. Lorem ipsum dolor
-          sit amet, consectetur adipisicing elit. Reprehenderit dolore adipisci
-          itaque optio nobis animi aliquam possimus magnam ex iusto, repudiandae
-          obcaecati, eaque tempora doloribus deleniti nostrum veniam, molestiae
-          pariatur.
-        </p>
+            <img
+              src="../assets/img/lotr.jpg"
+              alt="cover of lord of the rings"
+              width="122"
+              height="187.5"
+            />
+            <p>
+              You can purchase it
+              <a
+                href="https://www.amazon.com/Lord-Rings-Illustrated-J-R-R-Tolkien-ebook/dp/B09JF7NBT4/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr="
+                >Here</a
+              >.
+            </p>
+          </div>
+          <div class="right">
+            <p>
+              I dont believe I have ever found a story to be quite as imersive
+              and full of great characters as the Lord of the Rings. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit. Reprehenderit dolore
+              adipisci itaque optio nobis animi aliquam possimus magnam ex
+              iusto, repudiandae obcaecati, eaque tempora doloribus deleniti
+              nostrum veniam, molestiae pariatur.
+            </p>
+          </div>
+        </div>
       </section>
       <hr />
       <section class="favourite-music">
-        <h4>Current Favourite Song</h4>
+        <h4 class="fun-fact-h4">Current Favourite Song</h4>
         <h5>Tchaikovsky: Valse sentimentale</h5>
 
         <audio controls>
@@ -74,7 +85,7 @@
       </section>
       <hr />
       <section class="favourite-movie">
-        <h4>Current Favourite movie</h4>
+        <h4 class="fun-fact-h4">Current Favourite movie</h4>
         <h5>Lord of the Rings Fellowship of the Ring</h5>
         <iframe
           width="560"
@@ -88,6 +99,27 @@
         ></iframe>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="right">
+        <p>©2024 Evan Bogedin</p>
+
+        <h3>Contact me</h3>
+
+        <p>(999) 999-9999</p>
+
+        <p>ebogedin@oakland.edu</p>
+      </div>
+
+      <div class="left">
+        <h3>Links</h3>
+
+        <a class="footer-links" href="http://lego.com"> Hire Me</a>
+
+        <a class="footer-links" href="../index.html">Home</a>
+
+        <a class="footer-links" href="./my_resume.html">Resume</a>
+        <a class="footer-links" href="#">FunFacts</a>
+      </div>
+    </footer>
   </body>
 </html>

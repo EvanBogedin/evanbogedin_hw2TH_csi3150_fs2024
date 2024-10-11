@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
+    <link rel="stylesheet" href="../assets/css/styling.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -12,20 +13,25 @@
   </head>
   <body>
     <header>
-      <div class="main-heading">
-        <h1>Evan Bogedin's Portfolio Website</h1>
-      </div>
-      <!--nav-bar-starts-->
-      <div class="nav-bar">
-        <nav>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="./my_fun_facts.html">FunFacts</a></li>
-          </ul>
+      <div class="banner">
+        <img
+          class="logo"
+          src="../assets/img/Dumbo_Octopus_Pixel_Art.ico"
+          alt=""
+        />
+
+        <!--navbar-starts-->
+        <nav class="main-nav-bar">
+          <span><a href="../index.html">Home</a></span>
+          <span
+            ><a href="#"><u>Resume</u></a></span
+          >
+          <span><a href="./my_fun_facts.html">FunFacts</a></span>
         </nav>
+        <!--navbar-ends-->
+
+        <a href="http://lego.com">Hire Me</a>
       </div>
-      <!--nav-bar-ends-->
     </header>
     <main>
       <hr />
@@ -40,18 +46,20 @@
       <!--title-ends-->
       <hr />
       <!--resume-objectives-start-->
-      <section class="resume-Objective">
+      <section class="resume-objective">
         <h3>Objective</h3>
-        <p>
-          To secure an internship position in a company where I can apply my
-          programming skills, gain hands-on experience in software development
-          and expand my knowledge in computer science
-        </p>
+        <div class="objective-text">
+          <p>
+            To secure an internship position in a company where I can apply my
+            programming skills, gain hands-on experience in software development
+            and expand my knowledge in computer science
+          </p>
+        </div>
       </section>
       <!--resume-objectives-end-->
 
       <!--resume-professional-expirence-start-->
-      <section class="professional-expirence">
+      <section class="resume-professional-expirence">
         <h3>Professional Expirence</h3>
 
         <section class="professional-expirence-subsections">
@@ -87,42 +95,43 @@
       <!--resume-professional-expirence-end-->
 
       <!--resume-education-start-->
-      <section class="Education">
+      <section class="resume-education-section">
         <h3>Education</h3>
+        <div class="education-table">
+          <table border="2">
+            <tr>
+              <thead>
+                <tr>
+                  <th>Start-End</th>
+                  <th>Degree</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>2019-2021</th>
+                  <th>
+                    Associates in Applied Science, Computer Information Systems
+                  </th>
+                </tr>
+                <tr>
+                  <th>2021-2023</th>
+                  <th>Associates in Arts</th>
+                </tr>
+                <tr>
+                  <th>2023-expected winter 2025</th>
+                  <th>Bachelors in computer science</th>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>GPA</th>
 
-        <table border="2">
-          <tr>
-            <thead>
-              <tr>
-                <th>Start-End</th>
-                <th>Degree</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>2019-2021</th>
-                <th>
-                  Associates in Applied Science, Computer Information Systems
-                </th>
-              </tr>
-              <tr>
-                <th>2021-2023</th>
-                <th>Associates in Arts</th>
-              </tr>
-              <tr>
-                <th>2023-expected winter 2025</th>
-                <th>Bachelors in computer science</th>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <th>GPA</th>
-
-                <th>3.85</th>
-              </tr>
-            </tfoot>
-          </tr>
-        </table>
+                  <th>3.85</th>
+                </tr>
+              </tfoot>
+            </tr>
+          </table>
+        </div>
       </section>
       <!--resume-education-end-->
 
@@ -130,19 +139,37 @@
       <section class="extra-interests">
         <h3>Extracurricular Interests and Hobbies</h3>
 
-        <p>
-          I am a hobbiest game developer, i enjoy making art and composing music
-          for my games, with my favourite part being the coding.
-        </p>
+        <div class="extra-text">
+          <p>
+            I am a hobbiest game developer, i enjoy making art and composing
+            music for my games, with my favourite part being the coding.
+          </p>
+        </div>
       </section>
       <!--resume-extra-interests-end-->
     </main>
 
     <footer>
-      <h3>Contact me</h3>
-      <p>(999) 999-9999</p>
-      <p>ebogedin@oakland.edu</p>
-      <br />
+      <div class="right">
+        <p>©2024 Evan Bogedin</p>
+
+        <h3>Contact me</h3>
+
+        <p>(999) 999-9999</p>
+
+        <p>ebogedin@oakland.edu</p>
+      </div>
+
+      <div class="left">
+        <h3>Links</h3>
+
+        <a class="footer-links" href="http://lego.com"> Hire Me</a>
+
+        <a class="footer-links" href="../index.html">Home</a>
+
+        <a class="footer-links" href="#">Resume</a>
+        <a class="footer-links" href="./my_fun_facts.html">FunFacts</a>
+      </div>
     </footer>
   </body>
 </html>
